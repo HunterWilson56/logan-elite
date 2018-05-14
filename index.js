@@ -181,4 +181,5 @@ client.on("guildMemberAdd", function(member) {
     member.addRole(role).catch(console.error);
 });
 
-client.login('NDM5OTM4NDYyNzA4MjY5MDY2.DceVWQ._99XKpGHE--RHZARFR24f3jV7DA');
+
+client.login(process.env.token);
