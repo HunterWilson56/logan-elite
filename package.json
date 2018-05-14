@@ -1,8 +1,8 @@
 {
-  "name": "le",
+  "name": "logan56",
   "version": "1.0.0",
   "description": "logan elite bot",
-  "main": "index.js",
+  "main": "node index.js",
   "dependencies": {
     "canvas-constructor": "^1.0.1",
     "chalk": "^2.4.1",
@@ -36,3 +36,7 @@
   "author": "tea Cup#3343",
   "license": "ISC"
 }
+
+
+
+ 
