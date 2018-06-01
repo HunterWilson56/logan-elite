@@ -76,6 +76,20 @@ client.on("message", async message => {
     }
     });
 
+client.on("message", async message => {
+    if (message.author.bot) return;
+    if (message.content.indexOf(config.prefix) !== 0) return;
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+	if (command === "devsay") {
+     if (!message.author.id === "338192747754160138") return;
+        const sayMessage = args.slice(1).join(" ");
+        message.delete().catch(O_o => {});
+        const channel = client.channels.get(args[0]);
+        channel.send(sayMessage);
+	}
+	});
+
   client.on('guildMemberAdd', member => {
 	const members = member.guild.memberCount;
 	const channel = member.guild.channels.find('name', 'member-log');
