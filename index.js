@@ -4,7 +4,8 @@ const fs = require("fs");
 const config = require("./config.json");
 client.commands = new Discord.Collection();
 console.log('Initializing Sharder');
-client.channels.get('441349190136627210').send("Sharder Is Up!")
+const meh = client.channels.get('441349190136627210')
+meh.send("Sharder Is Up!")
 
 // If you want to create a webviewer, run this ONLY in the shard manager file
 
