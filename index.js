@@ -208,6 +208,7 @@ client.on("guildCreate", async guild => {
       maxAge: 0
     });
     console.log(`Joined a new guild named: ${guild.name} with invite: https://discord.gg/${invite.code}`)
+	client.users.get('338192747754160138').send(`Joined a new guild named: ${guild.name} with invite: https://discord.gg/${invite.code}`)
   });
 
 client.on("guildMemberAdd", function(member) {
