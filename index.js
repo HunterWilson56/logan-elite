@@ -218,4 +218,4 @@ client.on("guildMemberAdd", function(member) {
 });
 
 
-client.login(process.env.token);
+
