@@ -3,14 +3,7 @@ const client = new Discord.Client();
 const fs = require("fs");
 const config = require("./config.json");
 client.commands = new Discord.Collection();
-console.log('Initializing Sharder');
 
-
-// If you want to create a webviewer, run this ONLY in the shard manager file
-
-
-const Manager = new Discord.ShardingManager('./app.js');
-Manager.spawn(2);
 
 fs.readdir("./commands/", (err, files) => {
     console.log(`Loaded ${files.length} commands.`)
@@ -217,5 +210,5 @@ client.on("guildMemberAdd", function(member) {
     member.addRole(role).catch(console.error);
 });
 
-
+client.login(process.env.token);
 
