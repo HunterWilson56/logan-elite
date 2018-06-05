@@ -27,6 +27,7 @@
     "string-similarity": "^1.2.0",
     "superagent": "^3.8.2",
     "urban": "^0.3.1",
+    "quick.db": "^6.3.1",
     "weather-js": "^2.0.0"
   },
   "devDependencies": {},
