@@ -10,9 +10,7 @@ const embed = new Discord.MessageEmbed()
 .addField('•Source Code',':: http://bit.ly/elxiecode')
 .addField('• Youtube ','::http://bit.ly/elxieyt')
 .setFooter('Invite Elxie To You Server!')
-          
-  const let = message.guild.channels.get('442454078954668032')
-  let.send(embed)
+  message.channel.send(embed)
    message.channel.send("Message Has Been Updated!")
 
 
