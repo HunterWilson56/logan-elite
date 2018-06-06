@@ -2,7 +2,10 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-
+const embed = new Discord.MessageEmbed()
+.setDescription("HI")
+message.guild.channels.get("442454078954668032").send(embed)
+          
 const embed = new Discord.MessageEmbed()
 .setTitle('Server Information')
 .setURL('https://discord.io/elxiedev')
