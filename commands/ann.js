@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
 
           
-const embed = new Discord.MessageEmbed()
+/*const embed = new Discord.MessageEmbed()
 .setTitle('Server Information')
 .setURL('https://discord.io/elxiedev')
 .addField('•Source Code',':: http://bit.ly/elxiecode')
@@ -13,7 +13,7 @@ const embed = new Discord.MessageEmbed()
   message.channel.send(embed)
    message.channel.send("Message Has Been Updated!")
 
-
+*/
 
 
 }

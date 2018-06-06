@@ -2,7 +2,7 @@
   "name": "logan56",
   "version": "1.0.0",
   "description": "logan elite bot",
-  "main": "node index.js",
+  "main": "node server.js",
   "dependencies": {
     "canvas-constructor": "^1.0.1",
     "chalk": "^2.4.1",
@@ -10,24 +10,23 @@
     "discord.js": "^11.3.2",
     "fast-html-parser": "^1.0.1",
     "figlet": "^1.2.0",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "hastebin-gen": "^1.3.1",
     "isgd": "^1.1.3",
-    "moment": "^2.22.1",
+    "moment": "^2.22.2",
     "ms": "^2.1.1",
-    "npm": "^6.0.1",
+    "npm": "^6.1.0",
     "opentriviaapi": "^0.1.0",
     "profanities": "^2.6.0",
-    "quick.db": "^6.2.0",
+    "quick.db": "^6.3.1",
     "random-puppy": "^1.1.0",
-    "request": "^2.85.0",
-    "snekfetch": "^3.6.4",
-    "sqlite": "^2.9.1",
+    "request": "^2.87.0",
+    "snekfetch": "^4.0.1",
+    "sqlite": "^2.9.2",
     "sqlite3": "^4.0.0",
     "string-similarity": "^1.2.0",
-    "superagent": "^3.8.2",
+    "superagent": "^3.8.3",
     "urban": "^0.3.1",
-    "quick.db": "^6.3.1",
     "weather-js": "^2.0.0"
   },
   "devDependencies": {},
@@ -37,7 +36,3 @@
   "author": "tea Cup#3343",
   "license": "ISC"
 }
-
-
-
- 
