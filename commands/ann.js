@@ -2,9 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-const embed = new Discord.MessageEmbed()
-.setDescription("HI")
-message.guild.channels.get("442454078954668032").send(embed)
+
           
 const embed = new Discord.MessageEmbed()
 .setTitle('Server Information')
@@ -13,7 +11,8 @@ const embed = new Discord.MessageEmbed()
 .addField('• Youtube ','::http://bit.ly/elxieyt')
 .setFooter('Invite Elxie To You Server!')
           
-  message.guild.channels.get('442454078954668032').messages.fetch('446855711302090763').then(msg => msg.edit(embed));
+  const let = message.guild.channels.get('442454078954668032')
+  let.send(embed)
    message.channel.send("Message Has Been Updated!")
 
 
